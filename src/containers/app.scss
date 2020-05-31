@@ -1,0 +1,150 @@
+.app {
+  margin-bottom: 250px;  
+  
+  &__title {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: bold;    
+
+    background-color: rgba(var(--d87,255,255,255),1);
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  }
+}
+
+.grid {
+  display: grid;
+  margin: 120px 0 30px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 400px); 
+  padding-inline-start: 0; 
+  grid-auto-rows: 10px;
+  justify-content: center;
+
+  @media (max-width: 400px) {
+    display: block; 
+    width: 300px;   
+    margin: 0 auto;
+  }
+  
+  &__item {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+    list-style: none;
+
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+
+    transition: all 0.4s;
+
+    @media (max-width: 400px) {
+      margin-bottom: 20px;
+    }
+    
+    &:hover {
+      top: -10px;   
+    }  
+  }
+  
+  &__link-img {
+    cursor: zoom-in;
+  }
+
+  &__img {
+    width: 100%;  
+  }
+}
+
+.name {
+  padding: 10px;
+  display: flex;
+  align-items: center;  
+  
+  &__img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    margin: 0 0 0 10px;
+    font-size: 15px;  
+
+    & a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }  
+}
+
+// блок User
+.user {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__public-date {
+    margin: 0;
+  }
+
+  &__img-like {
+    padding: 10px 30px 10px 10px;
+
+    background-image: url('../../public/img/like.svg');
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-color: rgba(var(--d87,255,255,255),1);
+
+    border: none; 
+    
+    cursor: pointer;    
+  }
+
+  &__img-like:active {
+    outline: none;
+  }
+}
+
+.liked {
+  background-image: url('../../public/img/liked.svg');
+}
+
+// кнопка Загрузить еще
+.btn {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 40px;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: rgba(var(--d69,0,149,246),1);
+
+  color: rgba(var(--eca,255,255,255),1);
+  
+  cursor: pointer;  
+}
+
+.ImageListPrint {
+  .btn {
+    width: 80%;
+    position: unset;
+    transform: unset;
+  }  
+}

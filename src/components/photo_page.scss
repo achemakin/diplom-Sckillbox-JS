@@ -1,0 +1,87 @@
+.photo {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
+}
+
+.photo__img{
+  width: 100%;
+} 
+
+.user {
+  display: flex; 
+  
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+ 
+.user__logo {
+  display: flex; 
+}
+
+.user__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.user__name {
+  margin-left: 15px;
+
+  a {
+    color: inherit;
+  }
+}
+
+.photo .user__public-date {
+  @media (max-width: 1024px) {
+    margin: 30px 0;
+  }  
+}
+
+.photo .user__img-like {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 40px 0 0;
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }  
+}
+
+.link__back {
+  background: url("../../public/img/home.svg") 50% no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.link__next {
+  background: url("../../public/img/arrow.svg") 50% no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+}
+
+.link__previous {
+  background: url("../../public/img/arrow.svg") 50% no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.off {
+  opacity: 0;
+}

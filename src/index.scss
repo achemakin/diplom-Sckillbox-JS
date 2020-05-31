@@ -1,0 +1,30 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth; 
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;	
+}
+
+body {
+  margin: 0;
+  background-color: rgba(var(--b3f,250,250,250),1);
+  font-family: 'Open Sans Condensed', sans-serif;	
+  word-wrap: break-word;
+}
+
+body.modal-active {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
