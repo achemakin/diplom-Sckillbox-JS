@@ -14,7 +14,6 @@ import './index.scss';
 
 const history = createBrowserHistory();
 const code = location.search.split('code=')[1];
-console.log(code);
 
 let initialState = [];
 
